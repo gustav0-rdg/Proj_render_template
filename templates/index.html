@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>godofredo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer-style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/o-curado.css') }}">
+</head>
+<style>
+    body{
+        background-color: {{cor_fundo}};
+    }
+</style>
+<body>
+
+    <header>
+        <h1>Site do Curado</h1>
+        <a href="sobre">Sobre</a>
+    </header>
+    <main>
+        <div class="menu">
+            <div class="titulo-menu">
+                
+                <h2>Site para informações sobre o Curado</h2>
+                
+                <img src="{{url_for('static', filename=imagem )}}" alt="" style="width: 10%; height: 105
+        ;"> 
+            
+            </div>
+        
+            <div class="curiosidade-menu">
+                <h2>Curiosidade do dia</h2>
+                <p>{{curiosidade}}</p>
+                
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3>O Curado</h3>
+            <p>O segundo homem na história a recuperar a sindrome de down</p>
+        </div>
+        <div>
+            <p>Acesse nossas redes sociais</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O Curado</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer-style.css') }}">
+
+</head>
+<style>
+    body{
+        background-color: {{cor_fundo}};
+    }
+</style>
+<body>
+    <header>
+        <h1>O Curado</h1>
+        <p>O primeiro homem a se curar da sindrome de down</p>
+        <a href="menu">Menu</a>
+    </header>
+    <main>  
+        <div>
+            <img src="{{url_for('static', filename='img/1.webp')}}" alt="">
+        </div>
+        <div>
+        <h2>A história de Vitor Henrique</h2>
+        <p style="margin-left: 0.5rem;margin-right: 0.5rem;">
+            Vitor Henrique, um homem de 32 anos com Síndrome de Down, se envolveu em um incidente trágico conhecido como “O Caso Boogie Woogie”, onde, após um acidente de helicóptero que resultou na morte de três colegas, ele sofreu um trauma profundo. Surpreendentemente, após o acidente, Vitor começou a exibir uma transformação misteriosa, aparentemente "curando" sua Síndrome de Down. Sua condição genética se reconfigurou, e ele adquiriu habilidades cognitivas e emocionais que antes eram limitadas. Cientistas não conseguiram explicar o fenômeno, mas Vitor se tornou um símbolo de superação. Apesar das dificuldades psicológicas, ele fundou uma organização para apoiar pessoas com deficiência e passou a ser visto como um exemplo de transformação, não apenas física, mas também emocional e mental. Sua história desafiou as barreiras científicas e sociais, mostrando que a verdadeira superação vai além das condições externas.</p>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3>O Curado</h3>
+            <p>Desenvolvido pelo gustavo</p>
+        </div>
+        <div>
+            <p>Nossas redes sociais</p>
+        </div>
+    </footer>
+</body>
+</html>
