@@ -5,8 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Curado</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer-style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer-style.css') }}">
+    <!-- Importando o frameWork Materialize -->
 </head>
 <style>
     body{
@@ -17,7 +19,11 @@
     <header>
         <h1>O Curado</h1>
         <p>O primeiro homem a se curar da sindrome de down</p>
-        <a href="menu">Menu</a>
+        <div style="display: flex;">
+            <a href="menu">Menu</a>
+            <a href="cadastro">Cadastro</a>
+        </div>
+        
     </header>
     <main>  
         <div>

@@ -32,5 +32,10 @@ def pagina_inicial():
 def sobre():
     cor_fundo = random.choice(lista_cores)
     return render_template('sobre.html', cor_fundo = cor_fundo)
+
+@app.route("/cadastro")
+def cadastro():
+    return render_template('cadastro.html', frases_html = curiosidades)
+
 # Fazer o app rodar
 app.run(debug=True, host="0.0.0.0", port=8080)
